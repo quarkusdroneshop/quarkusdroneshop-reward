@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: quarkusdroneshop-reward
+  description: Rewardのマイクロサービスです
+  labels:
+    app: reward
+  annotations:
+    backstage.io/kubernetes-id: quarkusdroneshop-reward
+    tektonci.io/pipeline: quarkusdroneshop-reward
+    tekton.dev/type: pipeline
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/nmushino
+  system: b-cluster
